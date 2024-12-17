@@ -46,4 +46,23 @@ def add_data(data: str):
     bot_file.write(data)
     bot_data += data
 
+def next_scenario(current_scenario: list):
+    if len(current_scenario) == 0: #special case: first scenario
+        return [0]
+    #increase the scenario
+    current_scenario[0] += 1
+    #validate scenario
+    lenght = len(current_scenario)
+    for index in range(lenght):
+        max = 10 +2*index -2*lenght
+        if current_scenario[index] == max:
+            current_scenario[index] = 0
+            if index == lenght-1: #special case: enough senarios in class
+                current_scenario.append(0)
+            current_scenario[index+1] += 1
+    if len(current_scenario) == 5: #special case: enough senarios
+        return False
+    return current_scenario
+
+
 bot_file.close()
