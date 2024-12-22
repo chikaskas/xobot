@@ -1,6 +1,6 @@
-bot_file = open("good_bot.txt", "a+")
+bot_file = open("bot_data.txt", "a+")
 bot_file.seek(0)
-bot_data = bot_file.readlines()[0]
+bot_data = bot_file.readline()
 def prompt(table: str):
     print(table[0:3])
     print(table[3:6])
