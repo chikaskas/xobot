@@ -1,6 +1,15 @@
 # xobot
-Robot that plays X and O (tiktaktoe) with you.
-It works a bit like machine learning because you have to train it.
-To train it, the script gives you all the possible scenarios that could happen and you have to choose the best move.
-Some evel of automation while training so that the trianer has to train in less senarios.
-Automation like it automatically chooses square if you could instantly win or the opponent could instantly win.
+Run main.py
+
+## How to make:
+  Click play and select settings
+  If you selected 'random' to be on:
+    It will automatically choose random square and give you a bot code.
+  If you didn't select random:
+    A senario will be shown and you have to click the square you want the bot to pick.
+    Note: When training the bot, you are X but when playing, the player will be O
+
+## How to play:
+  Click play and paste the bot code or use one of the sample bots.
+  The bot starts first.
+  Note: When training the bot, you are X but when playing, the player will be O
